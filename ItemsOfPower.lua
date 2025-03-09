@@ -1032,7 +1032,7 @@ do
       return FormatNumber(b - v)
     end,
     ["Percent"] = function(b, v)
-      return(b > 0 and(FormatNumber(v / b * 100 - 100)) .. "%") or "+"
+      return(b > 0 and(FormatNumber(b / v * 100 - 100)) .. "%") or "+"
     end
   }
 
