@@ -13,6 +13,11 @@ Item Stat Valuation Addon (1.12 - Vanilla)
 * Cmd-line `/ipw` or `/itempower`
 * [untested] Share sets through addon comms.
 
+## Updates for Turtle wow
+
+* Added Vampirism, regen % while casting and resilience stat
+
+
 ## Screens
 
 | Tools | Options |
