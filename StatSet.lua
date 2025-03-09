@@ -13,12 +13,12 @@ local db
 
 local ItemBonusLibStats = {
   { "STR", "AGI", "STA", "INT", "SPI", },
-  { "ATTACKPOWER", "ATTACKPOWERFERAL", "CRIT", "TOHIT", "RANGEDCRIT", "RANGEDATTACKPOWER" },
-  { "DMG", "ARCANEDMG", "FIREDMG", "FROSTDMG", "HOLYDMG", "NATUREDMG", "SHADOWDMG", "SPELLCRIT", "SPELLTOHIT", "SPELLPEN" },
-  { "HEAL", "MANAREG" },
-  { "ARMOR", "DEFENSE", "BLOCK", "BLOCKVALUE", "DODGE", "PARRY" },
+  { "ATTACKPOWER", "ATTACKPOWERFERAL", "CRIT", "HASTE", "TOHIT", "RANGEDCRIT", "RANGEDATTACKPOWER" },
+  { "DMG", "ARCANEDMG", "FIREDMG", "FROSTDMG", "HOLYDMG", "NATUREDMG", "SHADOWDMG", "SPELLCRIT", "SPELLHASTE", "SPELLTOHIT", "SPELLPEN" },
+  { "HEAL", "MANAREG", "CASTINGREG" },
+  { "ARMOR", "DEFENSE", "RESILIENCE", "BLOCK", "BLOCKVALUE", "DODGE", "PARRY" },
   { "ARCANERES", "FIRERES", "NATURERES", "FROSTRES", "SHADOWRES" },
-  { "MANA", "HEALTH", "HEALTHREG", "FISHING", "MINING", "HERBALISM", "SKINNING" },
+  { "MANA", "HEALTH", "HEALTHREG", "VAMPIR", "FISHING", "MINING", "HERBALISM", "SKINNING" },
 }
 
 local ItemBonusLibHeaders = {
@@ -34,6 +34,7 @@ local ItemBonusLibHeaders = {
 local StatNames = {
   ATTACKPOWERFERAL = L["Attackpower in Feral Forms"],
   CRIT = L["Crit Rating"],
+  HASTE = L["Haste Rating"],
   TOHIT = L["Hit Rating"],
   RANGEDCRIT = L["Ranged Crit Rating"],
   RANGEDATTACKPOWER = L["Ranged Attackpower"],
@@ -45,12 +46,16 @@ local StatNames = {
   NATUREDMG = L["Nature Spelldamage"],
   SHADOWDMG = L["Shadow Spelldamage"],
   SPELLCRIT = L["Spell Crit Rating"],
+  SPELLHASTE = L["Spell Haste Rating"],
   SPELLTOHIT = L["Spell Hit Rating"],
   SPELLPEN = L["Spell Penetration"],
   HEAL = L["Bonus Healing"],
   MANAREG = L["Mana/5sec"],
+  CASTINGREG = L["Regen while casting"],
   MANA = L["Mana"],
   HEALTHREG = L["Health/5sec"],
+  VAMPIR = L["Vampirism Rating"],
+  RESILIENCE = L["Resilience Rating"],
   ARMOR = L["Base Armor"],
 }
 
@@ -212,3 +217,4 @@ do
 end
 
 ItemsOfPower:RegisterSetType("StatSet", StatSet)
+
