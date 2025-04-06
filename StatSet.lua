@@ -1,6 +1,6 @@
 --[[
-	### ItemsOfPower ###
-	ItemsOfPower StatSet Class
+    ### ItemsOfPower ###
+    ItemsOfPower StatSet Class
 
 --]]
 
@@ -13,7 +13,7 @@ local db
 
 local ItemBonusLibStats = {
   { "STR", "AGI", "STA", "INT", "SPI", },
-  { "ATTACKPOWER", "ATTACKPOWERFERAL", "CRIT", "HASTE", "TOHIT", "RANGEDCRIT", "RANGEDATTACKPOWER" },
+  { "ATTACKPOWER", "ATTACKPOWERFERAL", "CRIT", "HASTE", "TOHIT", "RANGEDCRIT", "RANGEDATTACKPOWER", "ARMORIGNORE" },
   { "DMG", "ARCANEDMG", "FIREDMG", "FROSTDMG", "HOLYDMG", "NATUREDMG", "SHADOWDMG", "SPELLCRIT", "SPELLHASTE", "SPELLTOHIT", "SPELLPEN" },
   { "HEAL", "MANAREG", "CASTINGREG" },
   { "ARMOR", "DEFENSE", "RESILIENCE", "BLOCK", "BLOCKVALUE", "DODGE", "PARRY" },
@@ -38,6 +38,7 @@ local StatNames = {
   TOHIT = L["Hit Rating"],
   RANGEDCRIT = L["Ranged Crit Rating"],
   RANGEDATTACKPOWER = L["Ranged Attackpower"],
+  ARMORIGNORE = L["Armor Penetration"],
   DMG = L["Spelldamage"],
   ARCANEDMG = L["Arcane Spelldamage"],
   FIREDMG = L["Fire Spelldamage"],
@@ -217,4 +218,3 @@ do
 end
 
 ItemsOfPower:RegisterSetType("StatSet", StatSet)
-

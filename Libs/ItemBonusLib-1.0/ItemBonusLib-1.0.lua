@@ -846,14 +846,11 @@ do
         { pattern = "Improves your chance to hit by (%d+)%%%.", effect = "TOHIT" },
         { pattern = "Improves your chance to hit with spells by (%d+)%%%.", effect = "SPELLTOHIT" },
         { pattern = "Decreases the magical resistances of your spell targets by (%d+)%.", effect = "SPELLPEN" },
-        -- Atiesh related patterns
         { pattern = "Increases your spell damage by up to (%d+) and your healing by up to (%d+)%.", effect = { "DMG", "HEAL" } },
         { pattern = "Increases healing done by magical spells and effects of all party members within %d+ yards by up to (%d+)%.", effect = "HEAL" },
         { pattern = "Increases damage and healing done by magical spells and effects of all party members within %d+ yards by up to (%d+)%.", effect = { "HEAL", "DMG" } },
         { pattern = "Restores (%d+) mana per 5 seconds to all party members within %d+ yards%.", effect = "MANAREG" },
         { pattern = "Increases the spell critical chance of all party members within %d+ yards by (%d+)%%%.", effect = "SPELLCRIT" },
-
-        -- Added for HealPoints
         { pattern = "Allows (%d+)%% of your Mana regeneration to continue while casting%.", effect = "CASTINGREG" },
         { pattern = "Improves your chance to get a critical strike with Nature spells by (%d+)%%%.", effect = "NATURECRIT" },
         { pattern = "Reduces the casting time of your Regrowth spell by 0%.(%d+) sec%.", effect = "CASTINGREGROWTH" },
@@ -873,12 +870,10 @@ do
         { pattern = "Reduces the mana cost of your Healing Touch%, Regrowth%, Rejuvenation and Tranquility spells by (%d+)%%%.", effect = "CHEAPERDRUID" },
         { pattern = "On Healing Touch critical hits%, you regain (%d+)%% of the mana cost of the spell%.", effect = "REFUNDHTCRIT" },
         { pattern = "Reduces the mana cost of your Renew spell by (%d+)%%%.", effect = "CHEAPERRENEW" },
-	--twow new t3 flash of light set bonus
-	{ pattern = "Increases the amount healed by your Judgement of Light by 20 and Flash of Light by 60.", effect = { "IMPFLASHOFLIGHT"}, value = {60}},
-
-        -- Updated Patterns (in 2.0)
+        { pattern = "Increases the amount healed by your Judgement of Light by 20 and Flash of Light by 60.", effect = { "IMPFLASHOFLIGHT"}, value = {60}},
         { pattern = "Increases your spell penetration by (%d+)%.", effect = "SPELLPEN" },
         { pattern = "Increases attack power by (%d+)%.", effect = "ATTACKPOWER" },
+        { pattern = "Your attacks ignore (%d+) of the target's armor%.", effect = "ARMORIGNORE" },  -- ADDED LINE
       },
 
       PATTERNS_GENERIC_LOOKUP =
